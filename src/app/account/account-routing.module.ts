@@ -7,8 +7,8 @@ import { AddressbookComponent } from './addressbook/addressbook.component';
 
 const routes: Routes = [
   {path: '', component: AccountHomeComponent},
-  {path: '/orders', component: OrderHistoryComponent},
-  {path: '/address', component: AddressbookComponent}
+  {path: 'orders', component: OrderHistoryComponent},
+  {path: 'address', component: AddressbookComponent}
 ];
 
 @NgModule({
