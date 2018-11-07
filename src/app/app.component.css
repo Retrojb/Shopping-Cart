@@ -1,0 +1,22 @@
+.main-title{
+    font-size: 48px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.header ul li{
+    display: inline;
+    list-style: none;
+    padding: 1.2rem;
+}
+.flex-container-1{
+    display: flex;
+    border: 2px black dashed;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    flex-wrap: wrap row;
+}
