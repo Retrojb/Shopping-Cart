@@ -8,6 +8,8 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { ErrorComponent } from './error/error.component';
 import { AuthService } from './auth.service';
 import { AdminComponent } from './admin/admin.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AdminComponent } from './admin/admin.component';
     HomeComponent,
     CatalogComponent,
     ErrorComponent,
-    AdminComponent
+    AdminComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

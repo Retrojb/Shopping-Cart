@@ -1,5 +1,5 @@
-<div class="header">
-<h1 class="main-title"> Welcome to my Shopping App</h1>
+
+<app-header></app-header>
 <div class="head-btn">
     <input type="button" [routerLink]="['/']" value="Home" routerLinkActive="active">
     <input type="button" [routerLink]="['/catalog']" value="Catalog" routerLinkActive="active">
@@ -11,9 +11,10 @@
 <div class="login">
     <input class="user" type="button" (click)="login()" value="{{loginLabel}}">
     <span class="user" [hidden]="user==='na'">User: {{user}}</span>
-</div>
-</div>
+  </div>
+
 
 
 
 <router-outlet></router-outlet>
+<app-footer></app-footer>
