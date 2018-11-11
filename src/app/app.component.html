@@ -1,15 +1,19 @@
 <div class="header">
 <h1 class="main-title"> Welcome to my Shopping App</h1>
-  <ul>
-    <li><button><a href [routerLink]="['/']">Home </a></button></li>
-    <li><button><a href [routerLink]="['/catalog']">Shop </a></button></li>
-    <li><button><a href [routerLink]="['/account']">My Account </a></button></li>
-    <li><button><a href [routerLink]="['/orders']">My Orders </a></button></li>
-    <li><button><a href [routerLink]="['/address']">Address Book </a></button></li>
-  </ul>
+<div class="head-btn">
+    <input type="button" [routerLink]="['/']" value="Home" routerLinkActive="active">
+    <input type="button" [routerLink]="['/catalog']" value="Catalog" routerLinkActive="active">
+    <input type="button" [routerLink]="['/account']" value="My Account" routerLinkActive="active">
+    <input type="button" [routerLink]="['account/orders']" value="Orders" routerLinkActive="active">
+    <input type="button" [routerLink]="['account/address']" value="Address" routerLinkActive="active">
 </div>
 
-<hr/>
+<div class="login">
+    <input class="user" type="button" (click)="login()" value="{{loginLabel}}">
+    <span class="user" [hidden]="user==='na'">User: {{user}}</span>
+</div>
+</div>
+
 
 
 <router-outlet></router-outlet>
